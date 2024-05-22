@@ -1,8 +1,9 @@
-# React + Vite
+# Password Manager
+##Using React + Vite framework
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Saves the data on local storage.
 
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Steps to Install:
+(Make sure yarn is installed on your machine)
+- yarn add
+- yarn dev
