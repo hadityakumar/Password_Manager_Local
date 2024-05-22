@@ -137,7 +137,7 @@ const Manager = () => {
                                             </td>
                                             <td className='py-3 text-center hidden md:table-cell'>
                                             <div className='flex items-center justify-center md:gap-3 gap-1'>
-                                                    {item.site}
+                                                    {item.username}
                                                     <div className='cursor-pointer size-5' onClick={copyText(item.username)}>
                                                         <lord-icon
                                                             style={{ width: "25px", height: "25px" }}

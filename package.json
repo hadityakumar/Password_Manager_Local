@@ -1,8 +1,8 @@
 {
+  "homepage": "https://hadityakumar.github.io/Password_Manager_Local",
   "name": "password_manager",
   "private": true,
   "version": "0.0.0",
-  "homepage": "https://hadityakumar.github.io/Password_Manager_Local",
   "type": "module",
   "scripts": {
     "dev": "vite",
