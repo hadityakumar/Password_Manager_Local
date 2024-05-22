@@ -79,9 +79,9 @@ const Manager = () => {
             <div className="md:p-0 md:mycontainer md:mt-20 md:mb-20 pb-10">
                 <h1 className='flex justify-center p-5 flex-wrap'>
                     <div>
-                        <span className='logo text-center font-bold text-green-500 text-4xl'>&lt;</span>
-                        <span className='logo text-center font-bold text-black text-4xl'>Pass</span>
-                        <span className='logo text-center font-bold text-green-500 text-4xl'>OP/&gt;</span>
+                        <span className='logo  text-center font-bold text-green-500 text-4xl'>&lt;</span>
+                        <span className='logo  text-center font-bold text-black text-4xl'>Pass</span>
+                        <span className='logo  text-center font-bold text-green-500 text-4xl'>OP/&gt;</span>
                     </div>
                     <span className='logo text-center w-full text-black text-md mt-5 md:text-2xl '>Your personal password manager</span>
                 </h1>
@@ -96,7 +96,7 @@ const Manager = () => {
                             </span>
                         </div>
                     </div>
-                    <button onClick={savePassword} className='flex justify-center gap-2 items-center mx-auto text-lg bg-green-500 text-white rounded-full px-4 py-1 my-2 text-md w-fit'>
+                    <button onClick={savePassword} className='shadow-2xl flex justify-center gap-2 items-center mx-auto text-lg bg-green-500 text-white rounded-full px-4 py-1 my-2 text-md w-fit'>
                         <lord-icon
                             src="https://cdn.lordicon.com/jgnvfzqg.json"
                             trigger="hover"
@@ -105,11 +105,11 @@ const Manager = () => {
                         Save
                     </button>
                 </div>
-                <div className="passwords md:px-60 mx-5">
-                    <h1 className='font-bold text-2xl py-3 mx-3'>Your Passwords</h1>
+                <div className="passwords md:px-60 mx-5 ">
+                    <h1 className='font-bold text-2xl py-3 mx-3 shadow-2xl'>Your Passwords</h1>
                     {passwordArray.length === 0 && <h2 className='text-center text-2xl text-green-700 font-bold'>No Passwords Saved</h2>}
                     {passwordArray.length !== 0 && (
-                        <table className="table-auto w-full text-white overflow-hidden rounded-xl">
+                        <table className="shadow-2xl table-auto w-full text-white overflow-hidden rounded-xl">
                             <thead className='bg-green-800'>
                                 <tr>
                                     <th className='py-2 md:w-40'>Site</th>
@@ -125,7 +125,7 @@ const Manager = () => {
                                             <td className='py-3 text-center'>
                                                 <div className='flex items-center justify-center md:gap-3 gap-1'>
                                                     <a href={item.site} target="_blank">{item.site}</a>
-                                                    <div className='cursor-pointer size-5' onClick={copyText(item.site)}>
+                                                    <div className='cursor-pointer size-5 shadow-2xl' onClick={copyText(item.site)}>
                                                         <lord-icon
                                                             style={{ width: "25px", height: "25px" }}
                                                             src="https://cdn.lordicon.com/iykgtsbt.json"
@@ -138,7 +138,7 @@ const Manager = () => {
                                             <td className='py-3 text-center hidden md:table-cell'>
                                             <div className='flex items-center justify-center md:gap-3 gap-1'>
                                                     {item.username}
-                                                    <div className='cursor-pointer size-5' onClick={copyText(item.username)}>
+                                                    <div className='cursor-pointer size-5 shadow-2xl' onClick={copyText(item.username)}>
                                                         <lord-icon
                                                             style={{ width: "25px", height: "25px" }}
                                                             src="https://cdn.lordicon.com/iykgtsbt.json"
@@ -151,7 +151,7 @@ const Manager = () => {
                                             <td className='py-3 text-center hidden md:table-cell'>
                                             <div className='flex items-center justify-center md:gap-3 gap-1'>
                                                     •••••••
-                                                    <div className='cursor-pointer size-5' onClick={copyText(item.password)}>
+                                                    <div className='cursor-pointer size-5 shadow-2xl' onClick={copyText(item.password)}>
                                                         <lord-icon
                                                             style={{ width: "25px", height: "25px" }}
                                                             src="https://cdn.lordicon.com/iykgtsbt.json"
@@ -163,7 +163,7 @@ const Manager = () => {
                                             </td>
                                             <td className='py-3 text-center'>
                                                 <div className='flex items-center justify-center text-center gap-3'>
-                                                    <div className='cursor-pointer size-5' onClick={editText(item.id)}>
+                                                    <div className='cursor-pointer size-5 shadow-2xl' onClick={editText(item.id)}>
                                                         <lord-icon
                                                             style={{ width: "25px", height: "25px" }}
                                                             src="https://cdn.lordicon.com/gwlusjdu.json"
@@ -171,7 +171,7 @@ const Manager = () => {
                                                             colors="primary:#ffffff">
                                                         </lord-icon>
                                                     </div>
-                                                    <div className='cursor-pointer size-5' onClick={deleteText(item.id)}>
+                                                    <div className='cursor-pointer size-5 shadow-2xl' onClick={deleteText(item.id)}>
                                                         <lord-icon
                                                             style={{ width: "25px", height: "25px" }}
                                                             src="https://cdn.lordicon.com/skkahier.json"
@@ -194,7 +194,7 @@ const Manager = () => {
                                                     <div className='flex flex-col items-center'>
                                                         <div className='flex items-center justify-center text-center gap-3'>
                                                             <span>Username: {item.username}</span>
-                                                            <div className='cursor-pointer size-5' onClick={copyText(item.username)}>
+                                                            <div className='cursor-pointer size-5 shadow-2xl' onClick={copyText(item.username)}>
                                                                 <lord-icon
                                                                     style={{ width: "25px", height: "25px" }}
                                                                     src="https://cdn.lordicon.com/iykgtsbt.json"
@@ -205,7 +205,7 @@ const Manager = () => {
                                                         </div>
                                                         <div className='flex items-center justify-center text-center gap-3 mt-2'>
                                                             <span>Password: {item.password}</span>
-                                                            <div className='cursor-pointer size-5' onClick={copyText(item.password)}>
+                                                            <div className='cursor-pointer size-5 shadow-2xl' onClick={copyText(item.password)}>
                                                                 <lord-icon
                                                                     style={{ width: "25px", height: "25px" }}
                                                                     src="https://cdn.lordicon.com/iykgtsbt.json"
