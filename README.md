@@ -8,3 +8,5 @@ Steps to Install:
 (Make sure yarn is installed on your machine)
 - yarn add
 - yarn dev
+
+## To visit the website: https://hadityakumar.github.io/Password_Manager_Local/
