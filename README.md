@@ -1,5 +1,5 @@
 # Password Manager
-##Using React + Vite framework
+## Using React + Vite framework
 
 Saves the data on local storage.
 
