@@ -1,5 +1,6 @@
 # Password Manager
 ## Using React + Vite framework
+### Additionally used: react-toastify, tailwind-scrollbar, uuid webkits.
 
 Saves the data on local storage.
 
